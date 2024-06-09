@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>Login and Signup</title>
+</head>
+<body>
+    <div class="larger">
+        <div class="container" id="signUpSection">
+            <div class="logo">
+                <img src="images/Insanjo Logo.png" alt="Logo">
+            </div>
+            <div class="tabs">
+                <button type="button" onclick="openCity(event, 'signUpEmail')" class="logs" id="defaultPage">Email</button>
+                <button type="button" onclick="openCity(event, 'signUpPhone')" class="logs" style="margin-left: 25px;">Phone Number</button>
+            </div>
+            <div class="pretabs" id="signUpEmail" style="display: block;">
+                <form id="signUpEmailForm">
+                    <div class="change">
+                        <span class="smallChange" onclick="toggleSection('login')">Login</span>
+                    </div>
+                    <input class="inputs" type="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="Email" required>
+                    <input id="Password1" class="inputs" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+                    <div id="showPass1" class="showPass">
+                        <i id="eyeIcon1" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <p>I have read and agree to Insanjo's <span><a href="#">Terms</a></span> and <span><a href="#">Privacy Policy</a></span></p>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        
+            <div class="pretabs" id="signUpPhone" style="display: none;">
+                <form id="signUpPhoneForm">
+                    <div class="change">
+                        <span class="smallChange" onclick="toggleSection('login')">Login</span>
+                    </div>
+                    <div class="numbers">
+                        <select class="selectCode" name="" id="cCode"></select>
+                        <input class="input-number" type="tel" pattern="[0-9]{10}" placeholder="Phone" required>
+                    </div>
+                    <input id="Password2" class="inputs" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+                    <div id="showPass2" class="showPass">
+                        <i id="eyeIcon2" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <p>I have read and agree to Insanjo's <span><a href="#">Terms</a></span> and <span><a href="#">Privacy Policy</a></span></p>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container" id="loginSection" style="display: none;">
+            <div class="logo">
+                <img src="images/Insanjo Logo.png" alt="Logo">
+            </div>
+            <div class="tabs">
+                <button type="button" onclick="openCity(event, 'loginEmail')" class="logs" id="defaultPage2">Email</button>
+                <button type="button" onclick="openCity(event, 'loginPhone')" class="logs" style="margin-left: 25px;">Phone Number</button>
+            </div>
+            <div class="pretabs" id="loginEmail" style="display: block;">
+                <form id="loginEmailForm">
+                    <div class="change">
+                        <span class="smallChange" onclick="toggleSection('signup')">Sign Up</span>
+                    </div>
+                    <input class="inputs" type="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="Email" required>
+                    <input id="Password3" class="inputs" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+                    <div id="showPass3" class="showPass">
+                        <i id="eyeIcon3" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        
+            <div class="pretabs" id="loginPhone" style="display: none;">
+                <form id="loginPhoneForm">
+                    <div class="change">
+                        <span class="smallChange" onclick="toggleSection('signup')">Sign Up</span>
+                    </div>
+                    <div class="numbers">
+                        <select class="selectCode" name="" id="cCode2"></select>
+                        <input class="input-number" type="tel" pattern="[0-9]{10}" placeholder="Phone" required>
+                    </div>
+                    <input id="Password4" class="inputs" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+                    <div id="showPass4" class="showPass">
+                        <i id="eyeIcon4" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="login.js"></script>
+</body>
+</html>
