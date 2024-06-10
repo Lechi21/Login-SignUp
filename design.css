@@ -14,11 +14,11 @@ body {
     height: 100vh;
     background: url(images/Watermark.jpeg) no-repeat center center/contain;
     border-image: fill 0 linear-gradient(#0001, #000);
-    opacity: 0.9;
+    opacity: 0.98;
 }
 
 p {
-    font-weight: 100;
+    font-weight: 500;
     font-size: 13px;
 }
 
@@ -78,6 +78,7 @@ img{
     border: none;
     outline: none;
     cursor: pointer;
+    font-weight: 600;
     /* padding: 10px 20px 10px 0px; */
     transition: 0.3s;
 }
@@ -114,7 +115,7 @@ form {
 }
 
 .input-number {
-    flex: 1 1 70%;
+    flex: 1 1 65%;
     padding: 10px;
     margin: 5px 0px 5px 10px;
     border: 1px solid #ccc;
