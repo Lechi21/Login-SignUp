@@ -41,12 +41,18 @@ a {
     position: absolute;
     width: 60px;
     height: 60px;
-    background-image: linear-gradient(-45deg, #21314d 0%, #2084f5 100%);
-    border-radius: 0 0 0 50%;
+    background: linear-gradient(-45deg, #21314d 0%, #2c7bd4 100%);
+    border-radius: 0 13% 0 50%;
+    border: 4px outset #2c7bd4;
     z-index: 5;
     right: 0;
     top: 0;
     cursor: pointer;
+}
+
+.change:hover {
+    background: linear-gradient(45deg, #21314d 0%, #00a2ff 100%);
+    border: 4px outset #00a2ff;
 }
 
 .smallChange {
