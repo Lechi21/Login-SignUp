@@ -22,6 +22,39 @@ body::before {
     z-index: -1;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .Home-logo {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.home-h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.color2 {
+    color: #044395;
+    margin-right: -4px;
+}
+
+.home .Home-logo img {
+    flex: 1;
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    margin-right: -11px;
+    margin-top: 2px;
+}
+
 p {
     font-weight: 100;
     font-size: 13px;
@@ -58,6 +91,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -60px;
 }
 
 .pattern {
