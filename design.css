@@ -92,7 +92,7 @@ a {
     grid-template-columns: 12rem 30rem;
     grid-template-areas: 'pattern container';
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: -60px;
 }
