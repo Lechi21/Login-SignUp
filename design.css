@@ -85,7 +85,7 @@ a {
 
 .content {
     display: grid;
-    width: 50%;
+    width: fit-content;
     background-color: #fff;
     border-radius: 5px;
     gap: 0.5rem;
