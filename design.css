@@ -268,3 +268,124 @@ button[type="submit"]:hover {
 .conditions {
     font-weight: 700;
 }
+
+/* Screens less than or equal to 1200px */
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .content {
+        width: 70%;
+        grid-template-columns: 10rem 30rem;
+        gap: 0.1rem;
+        grid-template-areas: 'pattern container';
+        margin-top: 1px;
+    }
+
+    .pattern {
+        grid-area: pattern;
+    }
+
+    .pattern-photo {
+        width: 180px;
+        height: 440px;
+    }
+
+    .container {
+        grid-area: container;
+        padding: 10px;
+    }
+
+    .forgot {
+        width: 33%;
+        margin: -27px 3% 27px 29.7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'container';
+        margin-top: 0;
+    }
+
+    .pattern {
+        display: none;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .home-h2 {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    button[type="submit"] {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .numbers, .inputs, .terms {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .forgot {
+        width: 50%;
+        margin: -27px 3% 27px 30.7%;
+    }
+}
+
+/* Screens less than or equal to 480px */
+@media screen and (max-width: 480px) {
+    .content {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                'container';
+        margin-top: 0;
+    }
+
+    .pattern {
+        display: none;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .home-h2 {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    } 
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    button[type="submit"] {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .numbers, .inputs, .terms, .input-number {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .forgot {
+        width: 100%;
+        margin: -27px 3% 27px -2.3%;
+    }
+        }
