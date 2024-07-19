@@ -271,6 +271,11 @@ button[type="submit"]:hover {
 
 /* Screens less than or equal to 1200px */
 @media screen and (min-width: 900px) and (max-width: 1200px) {
+    body {
+    height: 100vh;
+    overflow-y: scroll;
+    }
+    
     .content {
         width: 70%;
         grid-template-columns: 10rem 30rem;
@@ -300,6 +305,11 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+    height: 100vh;
+    overflow-y: scroll;
+    }
+    
     .content {
         width: 90%;
         grid-template-columns: 1fr;
